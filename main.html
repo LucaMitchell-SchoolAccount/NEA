@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astral Atlas</title>
+
+    <!-- STYLES -->
+     <link rel="stylesheet" href="styles.css">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/d6857f088c.js" crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- GRAPHICS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/FirstPersonControls.js"></script>
+
+</head>
+<body id="main-body">
+
+    <canvas id="map"></canvas>
+
+    <script src="/main.js"></script>
+    
+    <div id="exercises">
+        <div id="exercises-header">
+            <h1 class="text-large text-light">Exercises</h1>
+            <a href="" id="toggle" onclick="toggleExercises(event)" style="color: rgb(var(--light)); font-size: 2rem;"><i class="fa-solid fa-circle-arrow-down"></i></a>
+            <a href="dashboard.html" style="width: fit-content;">Stats <i class="fa-solid fa-chart-line"></i></a>
+        </div>
+
+        <script>
+            let state = "up"
+            const exercises = document.getElementById("exercises")
+            const toggleButton = document.getElementById("toggle")
+
+            function toggleExercises(event) {
+                event.preventDefault()
+                if (state === "up") {
+                    exercises.style.transform = "translateY(calc(100vh - 10rem))"
+                    toggle.style.transform = "rotate(180deg)"
+                    state = "down"
+                } else {
+                    exercises.style.transform = "initial"
+                    toggle.style.transform = "rotate(0deg)"
+                    state = "up"
+                }
+            }
+        </script>
+        
+        <div class="question">
+            <p style="margin-bottom: 1rem;">Question</p>
+            <div class="question-grid">
+                <input type="text" class="text-input" placeholder="Answer">
+                <input type="submit" class="submit-input" value="Submit">
+            </div>
+            <a href="" class="hint"><i class="fa-solid fa-lightbulb"></i> Hint</a>
+        </div>
+        <div class="question">
+            <p style="margin-bottom: 1rem;">Question</p>
+            <div class="question-grid">
+                <input type="text" class="text-input" placeholder="Answer">
+                <input type="submit" class="submit-input" value="Submit">
+            </div>
+            <a href="" class="hint"><i class="fa-solid fa-lightbulb"></i> Hint</a>
+        </div>
+        <div class="question">
+            <p style="margin-bottom: 1rem;">Question</p>
+            <div class="question-grid">
+                <input type="text" class="text-input" placeholder="Answer">
+                <input type="submit" class="submit-input" value="Submit">
+            </div>
+            <a href="" class="hint"><i class="fa-solid fa-lightbulb"></i> Hint</a>
+        </div>
+        <div class="question">
+            <p style="margin-bottom: 1rem;">Question</p>
+            <div class="question-grid">
+                <input type="text" class="text-input" placeholder="Answer">
+                <input type="submit" class="submit-input" value="Submit">
+            </div>
+            <a href="" class="hint"><i class="fa-solid fa-lightbulb"></i> Hint</a>
+        </div>
+        <div class="question">
+            <p style="margin-bottom: 1rem;">Question</p>
+            <div class="question-grid">
+                <input type="text" class="text-input" placeholder="Answer">
+                <input type="submit" class="submit-input" value="Submit">
+            </div>
+            <a href="" class="hint"><i class="fa-solid fa-lightbulb"></i> Hint</a>
+        </div>
+        <div class="question">
+            <p style="margin-bottom: 1rem;">Question</p>
+            <div class="question-grid">
+                <input type="text" class="text-input" placeholder="Answer">
+                <input type="submit" class="submit-input" value="Submit">
+            </div>
+            <a href="" class="hint"><i class="fa-solid fa-lightbulb"></i> Hint</a>
+        </div>
+    </div>
+
+    <div id="info">
+        <h1 class="text-large">Name</h1>
+        <div>
+            <ul>
+                <li>Right ascension</li>
+                <li>Declination</li>
+                <li>Visual magnitude</li>
+                <li>Hipparcos magnitude</li>
+                <li>Parallax</li>
+                <li>Motion in right ascension</li>
+                <li>Motion in declination</li>
+                <li>B-V index</li>
+                <li>V-I index</li>
+                <li>Number of systems star is a part of</li>
+                <li>Number of components in system</li>
+                <li>Spectral type</li>
+            </ul>
+            <ul>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+                <li>data</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="index.html" id="sign-out">Sign out <i class="fa-solid fa-right-from-bracket"></i></a>
+
+</body>
+</html>
